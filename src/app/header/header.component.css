@@ -1,0 +1,32 @@
+#navbarNav li {
+    width: 100px;
+}
+
+#navbarNav li a {
+    color: #335094;
+    font-size: 20px;
+}
+
+#navbarNav div button {
+    background-color: #0B256F;
+}
+
+.dropdown {
+    width: 150px;
+}
+
+.dropdown .btn,
+.dropdown-menu {
+    width: 100%;
+}
+
+@media screen and (max-width: 400px) {
+
+    img {
+        width: 100%;
+    }
+
+    .navbar-brand {
+        width: 75%;
+    }
+}

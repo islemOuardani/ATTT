@@ -1,0 +1,36 @@
+#container {
+    background-image: url('../../assets/images/bgRdv.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#immatriculation {
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tel {
+    border: 2px solid #FFA500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#suivant {
+    background-color: #FFA500;
+    color: white;
+}
+
+.row .card {
+    background-color: #FFFAF2;
+}
+
+.btn-check[type="radio"]:checked+.btn {
+    border-color: #FFA500;
+    border-width: 1px;
+}

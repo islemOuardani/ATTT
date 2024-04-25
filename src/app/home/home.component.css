@@ -1,0 +1,47 @@
+.container {
+    background-image: url('../../assets/images/pgHome2.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.btn-primary {
+    background-color: #4D74AD;
+    border-color: #4D74AD;
+}
+
+h1 {
+    font-family: 'Space Grotesk';
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.btn {
+    font-size: 26px;
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+    .container {
+        background-size: 140%;
+        background-position: right;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        background-image: url('../../assets/images/bgPhone.svg');
+        background-size: cover;
+        background-position: right;
+
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+}

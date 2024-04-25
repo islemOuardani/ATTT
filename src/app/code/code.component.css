@@ -1,0 +1,19 @@
+#container {
+    background-image: url('../../assets/images/bgRdv.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.auth-code-input:focus {
+    box-shadow: 0 0 0 0.2rem #ffa60085;
+    border-color: #FFA500;
+}
+
+.auth-code-input {
+    height: 200%;
+}
+
+#suivant {
+    background-color: #FFA500;
+    color: white;
+}

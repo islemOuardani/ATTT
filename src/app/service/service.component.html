@@ -1,0 +1,87 @@
+<div class="text-center p-5" id="container">
+    <div class="container card pt-5">
+        <div class="row mx-3">
+            <div class="col-md-2 me-5 d-flex justify-content-starts">
+                <div class="row">
+                    <div class="text-center mb-3" id="immatriculation">
+                        <h5 class="d-inline-block" id="serie">172</h5>
+                        <h5 class="d-inline-block mx-3">تونس</h5>
+                        <h5 class="d-inline-block" id="numero">4454</h5>
+                    </div>
+                    <div id="tel">
+                        <h5>+216 93 348 224</h5>
+                    </div>
+                </div>
+                <div class="row"></div>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <img src="../../assets/images/service/service.svg" alt="service" width="80" height="92">
+                <h1 class="m-3">Choisir un service </h1>
+            </div>
+        </div>
+        <div class="row m-md-3 my-md-5 my-1">
+            <div class="col-md-4 d-flex justify-content-md-end justify-content-center">
+                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                <label class="btn card p-3 shadow ms-md-5 mb-3 mb-md-0" for="option1">
+                    <div class="card-title row">
+                        <div class="col-3">
+                            <img src="../../assets/images/service/check.svg" alt="Identification">
+                        </div>
+                        <div class="col-8 mt-3 ms-1">
+                            <h4 class="card-title">Identification</h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Vérifier l'authenticité des identifiants du véhicule et la conformité
+                            des
+                            caractéristiques techniques du véhicule avec celles mentionnées sur le certficat
+                            d'immatriculation.
+                        </p>
+                    </div>
+                </label>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                <label class="btn card p-3 shadow mx-1 mb-3 mb-md-0" for="option2">
+                    <div class="card-title row">
+                        <div class="col-3">
+                            <img src="../../assets/images/service/car.svg" alt="léger">
+                        </div>
+                        <div class="col-8 mt-3 ms-1">
+                            <h4 class="card-title">Visite technique </h4>
+                            <h6 class="card-subtitle">véhicules légers</h6>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Visite technique pour les véhicule de mois de 3.5 tons
+                        </p>
+                    </div>
+                </label>
+            </div>
+            <div class="col-md-4 d-flex justify-content-md-starts justify-content-center">
+                <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                <label class="btn card p-3 shadow me-md-5 me-1" for="option3">
+                    <div class="card-title row">
+                        <div class="col-3">
+                            <img src="../../assets/images/service/poidlourd.svg" alt="poidLourd">
+                        </div>
+                        <div class="col-8 mt-3 ms-1">
+                            <h4 class="card-title">Visite technique </h4>
+                            <h6 class="card-subtitle">véhicules légers</h6>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Visite technique pour les véhicule de plus de 3.5 tons
+                        </p>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="row m-3 mb-5">
+            <div class="col d-flex justify-content-end pt-5 pt-md-0">
+                <button type="button" class="btn col-md-3 col-6" id="suivant" [routerLink]="'/code'">Suivant
+                    ></button>
+            </div>
+        </div>
+    </div>
+</div>

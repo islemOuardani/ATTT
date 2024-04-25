@@ -1,0 +1,140 @@
+<div class="text-center p-5" id="container">
+    <div *ngIf="form=='tu'" class=" container card">
+        <div class="row mx-3 my-5">
+            <div class="col d-flex d-flex justify-content-md-start justify-content-center ">
+                <div>
+                    <h6>Type d'immatriculation</h6>
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Série normale (TU)
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" (click)="form='rs'">Régime suspensif (RS)</a></li>
+                        <li><a class=" dropdown-item">Moto (MOTO)</a></li>
+                        <li><a class="dropdown-item">Tracteur (TRAC)</a></li>
+                        <li><a class="dropdown-item">Personnel Administratif et Technique (PAT)</a></li>
+                        <li><a class="dropdown-item">Chef de Mission Diplomatique (CMD)</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-md-end justify-content-center m-md-0 m-3">
+                <img src="../../assets/images/immatriculation/Immatriculation.svg" alt="9999   تونس   999" class="img"
+                    width="264" height="56">
+            </div>
+        </div>
+        <div class="row m-3">
+            <div class="col-md-6 d-flex justify-content-starts">
+                <h4>N° d'immatriculation*</h4>
+            </div>
+            <div class="col-4 col-md">
+                <input type="text" class="form-control" id="serie" name="serie" placeholder="Série" required>
+            </div>
+            <div class="col-3 col-md">
+                <h6>تونس</h6>
+            </div>
+            <div class="col-5 col-md">
+                <input type="text" class="form-control" id="numero" name="numero" placeholder="N°" required>
+            </div>
+        </div>
+        <div class="row m-3">
+            <div class="col-md-6 d-flex justify-content-starts">
+                <h4>Confirmer le N° d'immatriculation*</h4>
+            </div>
+            <div class="col-4 col-md">
+                <input type="text" class="form-control" id="serie2" name="serie2" placeholder="Série" required>
+            </div>
+            <div class="col-3 col-md">
+                <h6>تونس</h6>
+            </div>
+            <div class="col-5 col-md">
+                <input type="text" class="form-control" id="numero2" name="numero2" placeholder="N°" required>
+            </div>
+        </div>
+        <div class="row m-3">
+            <div class="col-md-6 d-flex justify-content-starts">
+                <h4>Les 5 derniers caractères du N° de châssis*</h4>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" id="chassis" name="chassis" placeholder="XXXXX" required>
+            </div>
+        </div>
+        <div class="row m-3 mb-5">
+            <div class="col-md-6 d-flex justify-content-starts">
+                <h6>J'accepte les <a style="color: #004CFF;text-decoration: underline;"
+                        href="../../assets/Conditions_generales.pdf" target="_blank"> conditions générales</a>
+                    <input class="form-check-input ms-5" type="radio" name="flexRadio" id="flexRadio"><label
+                        for="flexRadio" class="custom-radio-label"></label>
+                </h6>
+            </div>
+            <div class="col d-flex justify-content-end pt-5 pt-md-0">
+                <button type="button" class="btn col-md-3 col-6" id="suivant" [routerLink]="'/authentification'">Suivant
+                    ></button>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------------------RS----------------------------------------------->
+    <div *ngIf="form=='rs'" class=" container card">
+        <div class="row mx-3 my-5">
+            <div class="col d-flex justify-content-starts">
+                <div>
+                    <h6>Type d'immatriculation</h6>
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Régime suspensif (RS)
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" (click)="form='tu'">Série normale (TU)</a></li>
+                        <li><a class=" dropdown-item">Moto (MOTO)</a></li>
+                        <li><a class="dropdown-item">Tracteur (TRAC)</a></li>
+                        <li><a class="dropdown-item">Personnel Administratif et Technique (PAT)</a></li>
+                        <li><a class="dropdown-item">Chef de Mission Diplomatique (CMD)</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <img src="../../assets/images/immatriculation/ImmatriculationRS.svg" alt="999999 ن ت" class="img-fluid"
+                    width="264" height="56">
+            </div>
+        </div>
+        <div class="row m-3">
+            <div class="col-md-6 d-flex justify-content-starts">
+                <h4>N° d'immatriculation*</h4>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" id="serie" name="serie" placeholder="Série" required>
+            </div>
+            <div class="col">
+                <h6>ن ت</h6>
+            </div>
+        </div>
+        <div class="row m-3">
+            <div class="col-md-6 d-flex justify-content-starts">
+                <h4>Confirmer le N° d'immatriculation*</h4>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" id="serie2" name="serie2" placeholder="Série" required>
+            </div>
+            <div class="col">
+                <h6>ن ت</h6>
+            </div>
+        </div>
+        <div class="row m-3">
+            <div class="col-md-6 d-flex justify-content-starts">
+                <h4>Les 5 derniers caractères du N° de châssis*</h4>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" id="chassis" name="chassis" placeholder="XXXXX" required>
+            </div>
+        </div>
+        <div class="row m-3 mb-5">
+            <div class="col-md-6 d-flex justify-content-starts">
+                <h6>J'accepte les <a style="color: #004CFF;text-decoration: underline;"
+                        href="../../assets/Conditions_generales.pdf" target="_blank"> conditions générales</a>
+                    <input class="form-check-input ms-5" type="radio" name="flexRadio" id="flexRadio"><label
+                        for="flexRadio" class="custom-radio-label"></label>
+                </h6>
+            </div>
+            <div class="col d-flex justify-content-end ">
+                <button type="button" class="btn" id="suivant">Suivant ></button>
+            </div>
+        </div>
+    </div>
+</div>

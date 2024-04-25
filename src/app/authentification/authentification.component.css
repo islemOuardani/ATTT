@@ -1,0 +1,25 @@
+#container {
+    background-image: url('../../assets/images/bgRdv.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#suivant {
+    background-color: #FFA500;
+    color: white;
+}
+
+.btn-check[type="radio"]:not(:checked)+.btn {
+    border-color: #cccccc;
+    border-width: 3px;
+}
+
+.btn-check[type="radio"]:checked+.btn {
+    border-color: #FFA500;
+    border-width: 3px;
+}
+
+#ajouter {
+    background-color: #0B256F;
+    color: white;
+}

@@ -1,0 +1,20 @@
+input,
+textarea {
+    background-color: #ffffff00;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid #00124425;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #ffffff00;
+    border-color: #335094;
+    box-shadow: 0px 0px 0px #33509463;
+}
+
+#contact {
+    background-image: url('../../assets/images/bgContact.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
